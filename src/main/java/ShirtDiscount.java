@@ -3,10 +3,11 @@ public class ShirtDiscount {
         int shirtPrice = 3700; // Цена одной рубашки без скидки
         int selectedShirts = 2; // Количество уже выбранных рубашек
         int shirtsForDiscount = 3; // Количество рубашек, необходимое для скидки
+        double discountPercent = 0.4; // Процент скидки
+
         int shirtsToAddForDiscount = shirtsForDiscount - selectedShirts; // Количество рубашек, которые надо добавить к купленным для скидки
         int totalPriceSelected = shirtPrice * selectedShirts; // Цена уже выбранных рубашек без скидки
         int totalPriceToAdd = shirtPrice * shirtsToAddForDiscount; // Цена рубашек (без скидки), которые надо докупить, чтобы получить скидку
-        double discountPercent = 0.4; // Процент скидки
         double priceWithDiscount = (totalPriceSelected + totalPriceToAdd) * (1 - discountPercent); // Цена всех рубашек со скидкой
         double pricePerShirtWithDiscount = shirtPrice * (1 - discountPercent); // Цена одной рубашки со скидкой
         double savedMoney = totalPriceSelected + totalPriceToAdd - priceWithDiscount; // Сэкономленные деньги
