@@ -11,6 +11,6 @@ public class Age {
     }
 
     public static long calculateRatio(long universeAge, int ageOfHumanRace) {
-        return universeAge/ ageOfHumanRace;
+        return universeAge / ageOfHumanRace;
     }
 }
